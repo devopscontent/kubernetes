@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: 
   name: my-app-deployment
   labels:
     app: my-app
@@ -9,14 +9,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-     app: my-app  
-     type: backend  
+      app: my-app
+      type: backend
   template:
-    metadata:
+    metadata: 
       labels:
         app: my-app
         type: backend
     spec:
       containers:
-       - name: nginx-container       
-         image: nginx
+        - name: nginx-container
+          image: nginx

@@ -1,0 +1,12 @@
+{
+"apiVersion": "v1",
+ "kind": "Binding" ,
+ "metadata:": {
+    "name": "nginx-pending"
+ },
+ "target": {
+    "apiVersion": "v1",
+    "kind": "Node",
+    "name": "node01"
+ }
+}
